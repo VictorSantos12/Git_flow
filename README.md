@@ -4,13 +4,13 @@
 <br>
 <img src="https://img.shields.io/static/v1?label=Git&message=flow&color=red&style=for-the-badge&logo="/>
 
-O Git Flow é um modelo de workflow comumente utilizado por squads de desenvolvimento com o intuito de maximizar e aprimorar o versionamento de código, visando uma maior organização e segurança. Antes de mais nada, para uma melhor compreensão do assunto, é importante entender que o Git Flow não se trata da ferramenta git, mas sim de uma estratégia que se aplica a esta. 
+O Git Flow é um modelo de workflow comumente utilizado por squads de desenvolvimento com o intuito de maximizar e aprimorar o versionamento de código, visando uma maior organização e segurança. O Git Flow não se trata da ferramenta git, mas sim de uma estratégia que se aplica a ela. 
 
-De forma sucinta, a estratégia consiste em uma organização das branchs que permita ter um controle do fluxo de criação, aprimoramento e release das novas features de um sistema. Mas, antes de entrarmos nos conceitos propriamente ditos, cabe entender como o git é comumente utilizado.
+De forma sucinta, a estratégia consiste em uma organização das branches que permita ter um controle do fluxo de criação, aprimoramento e release das novas features de um sistema. Mas, antes de entrarmos nos conceitos propriamente ditos, cabe a nós entender como o git é comumente utilizado.
 
 <h1>Git</h1>
 
-O git é uma ferramenta de gerenciamento de versão, ou seja, ela registra e da acesso aos "momentos" de um fluxo de desenvolvimento, isto é: permite que os desenvolvedores de um time acessem e modifiquem um código de diferentes formas, através de uma versão deste código; esta que se manifestam em uma timeline de ramificações (branches), sem necessariamente modificar o código original. Este modelo pode ser representado como uma árvore cujos galhos se originam do tronco, sendo este a branch ```master```.
+O git é uma ferramenta de gerenciamento de versão, ou seja, ela registra e da acesso aos "momentos" de um fluxo de desenvolvimento, isto é: permite que os desenvolvedores de um time acessem e modifiquem um código de diferentes formas, através de uma versão deste código; versão esta que se manifestam em uma timeline de ramificações (branches), sem necessariamente modificar o código original. Este modelo pode ser representado como uma árvore cujos galhos se originam do tronco, sendo este a branch ```master```.
 
 <h1>Por que o Git Flow ?</h1>
 
