@@ -10,13 +10,7 @@ De forma sucinta, a estratégia consiste em uma organização das branchs que pe
 
 <h1>Git</h1>
 
-O git, como já deve estar claro, é uma ferramenta de controle de versão, ou seja, ela registra e da acesso aos "momentos" de um fluxo de desenvolvimento, isto é: permite que os desenvolvedores de um time acessem e modifiquem um código de diferentes formas, que se manifestam em uma timeline de ramificações (branches), sem necessariamente modificar o código original. Este modelo pode ser representado como uma árvore cujos galhos se originam do tronco, sendo este a branch ```master```:
-
-<div align="center">
-  <img src="">
-</div>
-
-Acima tempos um exemplo de abordagem genérico de uso do git para gerenciar as versões de um código fonte.
+O git, como já deve estar claro, é uma ferramenta de controle de versão, ou seja, ela registra e da acesso aos "momentos" de um fluxo de desenvolvimento, isto é: permite que os desenvolvedores de um time acessem e modifiquem um código de diferentes formas, que se manifestam em uma timeline de ramificações (branches), sem necessariamente modificar o código original. Este modelo pode ser representado como uma árvore cujos galhos se originam do tronco, sendo este a branch ```master```.
 
 <h1>Por que o Git Flow ?</h1>
 
@@ -61,6 +55,8 @@ A hotfix se origina da master quando existe uma correção em produção que dem
 A branch release é a soma de todas as features que sofreram merge e compõem a develop, ou seja, ela é a responsável por integrar todas as funcinalidades resultantes do desenvolvimento com a principal branch do projeto, funcionando como um ambiente de homologação e permitindo o deploy para produção. 
 
 Ela também é removida após os testes e o merge com a master terem sido concluídos. Caso esta contenha algum bug ou problema corrigido, este deve retornar corrigido a sua origem através de um merge com a develop. é no momento de conclusão de uma release tag contendo a versão da desta deve ser incluída, sendo registado no merge com a master.
+
+A imagem a seguir descreve o fluxo de desenvolvimento e controle de versão com base nos conceitos do Git Flow:
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/61476935/207422885-5f12d199-5f13-4ce8-9129-fd8ceb746356.png">
