@@ -20,27 +20,27 @@ Um sistema simples pode ser desenvolvido sem gerar preocupações quanto ao seu 
 
 Por outro lado, não é recomendado que se aplique o Git Flow em projetos com uma alta continuidade de entragas, já que as branches geradas no Git Flow tem uma duração maior que em projetos de pequeno porte.
 
-<h2>Conceitos</h2>
+<h1>Conceitos</h1>
 
 Tendo entendido quando utilizar o Git Flow, agora podemos abordar como utilizá-lo. A princípio, dividimos as ramificações (branches) em dois tipos distintos:. 
 
-<h2>Principais</h2>
+<h1>Principais</h1>
 
 As branchs principais, ou seja, aquelas que de fato irão registrar as sequentes atualizações na versão e que serão eternas no Git Flow, são duas: 
 
-<h3>master/main</h3>
+<h2>master/main</h2>
 
 A branch master, como é de se esperar, é a branch que origina todas as demais, mantendo registradas todas as releases geradas a partir do que foi desenvolvido, corrigido ou deletado nas branches que dela se originam, gerando o código que irá operar em produção. Quando uma nova release for atribuída a branch master, esta deve recebar uma tag contendo a versão resultante da release. A branch master interage diretamente com três branches: <i>develop</i>, <i>Hotfix</i> e <i>release</i>.
 
-<h3>develop</h3>
+<h2>develop</h2>
 
 A branch develop é a primeira a ser originada da branch master, sendo a ramificação responsável por registrar todas a features estáveis do código que soferá deploy. Isso significa que ela possui funcionalidades que, quando testadas e aprovadas, farão parte de uma release, posteriormente sendo integradas a master. A branch develop interage diretamente com todas as demais branches.
 
-<h2>Suporte</h2>
+<h1>Suporte</h1>
 
 As branches de suporte, ou seja, as que servem as branhces pricipais, e que não são permanentes dentro do fluxo de desenvolvimento, são três:
 
-<h3>feature</h3>
+<h2>feature</h2>
 
 A branch feature irá originar uma nova funcionalidade a partir da develop, retornando para ela após esta ter sido concluída. Dentro do Git Flow, uma feature conta com uma convenção de nomenclatura que auxilia o seu reconhecimento e mantém um padrão:
 
@@ -48,11 +48,11 @@ A branch feature irá originar uma nova funcionalidade a partir da develop, reto
 
 Após a feature em questão sofrer o merge que finda seu desenvolvimento, esta é removida. A branch feature só interage diretamente com sua branch de origem, ou seja, a <i>develop</i>.
 
-<h3>hotfix</h3>
+<h2>hotfix</h2>
 
 A hotfix se origina da master quando existe uma correção em produção que demande atenção imediata. O que as diferencia de uma feature é que estas se originam da branch principal e, quando são finalizadas, tando a master quanto a develop sofrem um merge, recebendo as correções. Quando retornada a branch master, esta recebe uma tag indicando uma mudança na versão, assim como também é removida. Ela interage diretamente com duas branches: <i>master</i> e <i>develop</i>.
 
-<h3>Release</h3>
+<h2>Release</h2>
 
 A branch release é a soma de todas as features que sofreram merge e compõem a develop, ou seja, ela é a responsável por integrar todas as funcinalidades resultantes do desenvolvimento com a principal branch do projeto, funcionando como um ambiente de homologação e permitindo o deploy para produção. 
 
